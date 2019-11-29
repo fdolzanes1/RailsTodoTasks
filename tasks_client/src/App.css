@@ -20,3 +20,15 @@
 .App-link {
   color: #09d3ac;
 }
+
+$yellow: #F5DD16;
+$dark-grey: #7C7C7C;
+$light-grey: #BEBEBE;
+$red: #EE4525;
+
+.navbar{
+  background-color: $dark-grey;
+  .navbar-brand{
+    color: $yellow !important;
+  }
+}
