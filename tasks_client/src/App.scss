@@ -9,3 +9,17 @@ $red: #EE4525;
     color: $yellow !important;
   }
 }
+
+.tasks_list{
+  margin-top: 30px;
+  .title{
+    font-size: 32px;
+    color: $dark-grey;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+ 
+  .card{
+    background-color: $dark-grey;
+  }
+}
