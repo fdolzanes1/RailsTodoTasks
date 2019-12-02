@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import Tasks from './components/tasks/Tasks';
 import './App.scss';
 
@@ -17,6 +18,7 @@ class App extends Component {
         <Container>
           <Tasks/>
         </Container>
+        <Footer/>
       </div>
     );
   }
