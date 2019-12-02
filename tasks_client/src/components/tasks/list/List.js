@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table';
-import Row from 'react-bootstrap/Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class List extends Component {
   
-  async deleteTasks() {
-    if (window.confirm("Are you sure you want to delete: '${task.title}' ")) {
-      await fetch("http://localhost:3001/tasks/${task.id}", {method: "DELETE"});
+  async deleteTasks(task) {
+    if (window.confirm(`Are you sure you want to delete: "${task.title}"`)) {
+      await fetch(`http://localhost:3001/tasks/${task.id}`, {method: 'DELETE'});
       this.props.loadTasks();
     }
   }
 
   async checkTask(task) {
     let form = {'task': {'done': 'true'}}
-    await fetch("http://localhost:3001/tasks/${task.id}",
+    await fetch(`http://localhost:3001/tasks/${task.id}`,
       {
         method: 'PUT',
         headers: {
@@ -43,8 +42,8 @@ class List extends Component {
                     <td>
                       { 
                         task.done == false
-                        ? <a className="check" href="#">
-                            <FontAwesomeIcon icon="check-circle" onClick={() => this.checkTask(task)} size="lg"/>
+                        ? <a className="check" href="#" onClick={() => this.checkTask(task)} size="lg">
+                            <FontAwesomeIcon icon="check-circle"  />
                           </a> 
                         : null
                       }
