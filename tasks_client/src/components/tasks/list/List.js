@@ -13,6 +13,23 @@ class List extends Component {
     }
   }
 
+  async checkTask(task) {
+    let form = {'task': {'done': 'true'}}
+    await fetch("http://localhost:3001/tasks/${task.id}",
+      {
+        method: 'PUT',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          task: { done: true } 
+        })
+      }
+    )
+    this.props.loadTasks();
+  }
+
   render() {
     return (
       <div>
@@ -27,7 +44,7 @@ class List extends Component {
                       { 
                         task.done == false
                         ? <a className="check" href="#">
-                            <FontAwesomeIcon icon="check-circle"/>
+                            <FontAwesomeIcon icon="check-circle" onClick={() => this.checkTask(task)} size="lg"/>
                           </a> 
                         : null
                       }
