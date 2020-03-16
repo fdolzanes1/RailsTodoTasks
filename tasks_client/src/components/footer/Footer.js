@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Header extends Component {
  render() {

@@ -41,7 +41,7 @@ class List extends Component {
                     <td className="col-md-10">{task.title}</td>
                     <td>
                       { 
-                        task.done == false
+                        task.done === false
                         ? <a className="check" href="#" onClick={() => this.checkTask(task)} size="lg">
                             <FontAwesomeIcon icon="check-circle"  />
                           </a> 

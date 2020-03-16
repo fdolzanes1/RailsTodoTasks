@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import List from './list/List';
 import CreateTask from './create_tasks/CreateTasks';
-import Button from 'react-bootstrap/Button';
 
 class Tasks extends Component {
 
