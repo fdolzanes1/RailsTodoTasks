@@ -10,6 +10,28 @@
 - [Ruby on Rails](https://rubyonrails.org/)
 - [React](https://reactjs.org/)
 
+## How to use
+
+```
+git clone https://github.com/fdolzanes1/RailsTodoTasks/
+```
+
+### Backend
+
+cd RailsTodoTasks
+```
+rails s -p 3001
+```
+### FrontEnd
+
+cd tasks_client
+```
+npm install 
+```
+```
+npm start
+```
+
 ## Author
 
 <table>
