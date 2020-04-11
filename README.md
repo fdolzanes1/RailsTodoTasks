@@ -19,17 +19,28 @@ git clone https://github.com/fdolzanes1/RailsTodoTasks/
 ### Backend
 
 cd RailsTodoTasks
+
+To get started with the app, clone the repo and then install the needed gems:
 ```
-rails s -p 3001
+$ bundle install
+```
+Next, migrate the database:
+```
+$ rails db:migrate
+```
+You'll be ready to run the app in a local server:
+```
+$ rails server -p 3001
 ```
 ### FrontEnd
 
 cd tasks_client
+
 ```
-npm install 
+$ npm install 
 ```
 ```
-npm start
+$ npm start
 ```
 
 ## Author
