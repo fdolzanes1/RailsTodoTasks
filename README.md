@@ -13,13 +13,14 @@
 ## How to use
 
 ```
-git clone https://github.com/fdolzanes1/RailsTodoTasks/
+$ git clone https://github.com/fdolzanes1/RailsTodoTasks/
 ```
 
 ### Backend
 
-cd RailsTodoTasks
-
+```
+$ cd RailsTodoTasks
+```
 To get started with the app, clone the repo and then install the needed gems:
 ```
 $ bundle install
