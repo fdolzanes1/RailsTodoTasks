@@ -44,7 +44,7 @@ $ npm install
 $ npm start
 ```
 
-## Author
+## Software Developer
 
 <table>
   <tr>
